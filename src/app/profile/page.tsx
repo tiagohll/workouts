@@ -44,8 +44,12 @@ export default function Profile() {
                         <span className="font-bold">103 cm</span>
                     </div>
                     <div className="bg-zinc-700 w-full flex flex-col p-1 rounded items-center justify-center">
-                        <span>Braço:</span>
+                        <span>Braço Direito:</span>
                         <span className="font-bold">35.3 cm</span>
+                    </div>
+                    <div className="bg-zinc-700 w-full flex flex-col p-1 rounded items-center justify-center">
+                        <span>Braço Esquerdo:</span>
+                        <span className="font-bold">34.9 cm</span>
                     </div>
                     <div className="bg-zinc-700 w-full flex flex-col p-1 rounded items-center justify-center">
                         <span>Antebraço:</span>

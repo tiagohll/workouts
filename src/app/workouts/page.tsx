@@ -2,6 +2,7 @@
 
 import HeaderBottom from "@/components/HeaderBottom";
 import Select from "@/components/Select";
+import { TreinoV1 } from "@/db/treinos";
 import { useState } from "react";
 
 const reps = [
@@ -126,9 +127,16 @@ export default function Workouts() {
 
                 {treino != "DAY OFF" && (
                     <div className="bg-zinc-800 w-full p-1 flex flex-col items-center justify-center rounded-md gap-2">
-                        <div className="bg-zinc-700 p-1 w-full rounded-md font-medium">
-                            Teste
-                        </div>
+                        {TreinoV1.map((treino) =>
+                            treino.exercises.map((ex) => (
+                                <div
+                                    key={ex.id}
+                                    className="bg-zinc-700 p-1 w-full rounded-md font-medium"
+                                >
+                                    {ex.name}
+                                </div>
+                            ))
+                        )}
                     </div>
                 )}
             </div>
